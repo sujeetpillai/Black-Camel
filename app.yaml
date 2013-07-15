@@ -14,10 +14,11 @@ handlers:
 - url: /cssRandomizer
   script: cssRandomizer.app
 
+- url: /ccHandler
+  script: ccHandler.app
+
 - url: /.*
   script: main.app
-
-
 
 libraries:
 - name: jinja2

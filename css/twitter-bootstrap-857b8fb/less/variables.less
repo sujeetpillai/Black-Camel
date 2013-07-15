@@ -35,9 +35,10 @@
 
 // Scaffolding
 // -------------------------
-@hue:                   hue(color(`Math.floor(Math.random()*16777215).toString(16)`));
-@bodyBackground:        hsl(@hue,100%,percentage(`Math.random()`));
-@textColor:             hsl(hue(spin(@bodyBackground,180)),100%,100%-lightness(@bodyBackground));
+//@hue:                   hue(color(`Math.floor(Math.random()*16777215).toString(16)`));
+//@bodyBackground:        color(`"#"+Math.floor(Math.random()*255).toString(16)+Math.floor(Math.random()*255).toString(16)+Math.floor(Math.random()*255).toString(16)`);
+@bodyBackground:        color(`baseColor`);
+@textColor:             complementary(flip(@bodyBackground));
 
 // Links
 // -------------------------
